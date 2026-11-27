@@ -60,7 +60,9 @@ def move_code(text):
 
 class Game:
     def __init__(self, fen=None):
-        self.handle = check(create(fen.encode() if fen else None, 0))
+        if fen is not None and "\0" in fen:
+            raise ValueError("FEN cannot contain a NUL character")
+        self.handle = check(create(fen.encode() if fen is not None else None, 0))
         self.moves = (C.c_int * CAPACITY)()
         self.visits = (C.c_int * CAPACITY)()
 

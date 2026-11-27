@@ -15,6 +15,12 @@ make lean-test              # Compare executable Lean, C++, and the supplied ope
 python3 tests/check_experiment.py
 ```
 
+The [rules regression matrix](tests/test_rules_matrix.py) exercises every piece on every
+permitted source square in both colors, selected blocker arrangements, every en passant target
+and victim type, and King jumps in composition mode. It compares full move lists and seeded
+game transitions with the independent Python oracle. The FEN tests cover malformed fields,
+local position validation, and canonical serialization through the CLI and Python binding.
+
 ## Generate moves and replay a game
 
 ```sh

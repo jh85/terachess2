@@ -25,7 +25,7 @@ $(BUILD)/native_test: tests/native.cpp $(BUILD)/engine.o $(BUILD)/mcts.o
 
 test: all $(BUILD)/native_test
 	$(BUILD)/native_test
-	TERA_BIN=$(BUILD)/tera $(PYTHON) -m unittest discover -s tests -v
+	TERA_BIN=$(BUILD)/tera TERA_LIB=$(BUILD)/libtera.so $(PYTHON) -m unittest discover -s tests -v
 
 lean:
 	$(LEAN) Rules.lean
