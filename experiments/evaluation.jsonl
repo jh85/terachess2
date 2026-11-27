@@ -1,0 +1,3 @@
+{"baseline": "random", "endings": {"truncated": 16}, "event": "evaluation", "games": 16, "iteration": 2, "mean_final_material": 4.75, "outcomes": {"truncated": 16}, "plies": 2048, "seed": 84511}
+{"baseline": "material", "endings": {"checkmate": 1, "repetition": 1, "truncated": 14}, "event": "evaluation", "games": 16, "iteration": 2, "mean_final_material": -94.3125, "outcomes": {"draw": 1, "loss": 1, "truncated": 14}, "plies": 1931, "seed": 84511}
+{"baseline": "untrained", "endings": {"repetition": 1, "truncated": 15}, "event": "evaluation", "games": 16, "iteration": 2, "mean_final_material": 0.8125, "outcomes": {"draw": 1, "truncated": 15}, "plies": 2009, "seed": 84511}

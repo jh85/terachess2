@@ -1,0 +1,2 @@
+{"device": "cpu", "event": "train_start", "first_iteration": 3, "games": 4, "max_plies": 16, "parameters": 108000, "profile": "terachess-ii/default-alternate@1", "seed": 4102, "sims": 8, "torch": "2.15.0+cpu"}
+{"curriculum_games": 2, "elapsed_s": 0.88, "endings": {"checkmate": 1, "truncated": 3}, "event": "iteration", "inference_batches": 144, "inferred": 433, "iteration": 3, "labelled_in_replay": 1515, "plies": 49, "policy_loss": 4.475688338279724, "replay": 10635, "steps": 4, "value_loss": 0.056230611400678754}

@@ -1,0 +1,10 @@
+/build/
+/.venv/
+/.tools/
+/.lean-build/
+__pycache__/
+*.tmp
+/runs/
+
+# Local model checkpoints
+*.pt
